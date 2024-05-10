@@ -72,6 +72,7 @@ body .guessNumberGame .result h2 {
 }
 
 #answerCorrect {
+  margin-top: 95px;
   font-family: 'Open Sans Condensed';
   color: rgb(186, 0, 0);
   font-size: 3em;
@@ -79,7 +80,8 @@ body .guessNumberGame .result h2 {
   text-align: center;
 }
 
-body .guessNumberGame .result .answerIncorrect {
+#answerIncorrect {
+  margin-top: 95px;
   font-family: 'Open Sans Condensed';
   font-size: 3em;
   font-weight: 300;
