@@ -15,19 +15,18 @@
   <section class="guessNumberGame">
     <section class="fields"> <!-- 左邊輸入區塊 -->
       <h1>猜數字遊戲</h1>
-      <h2>輸入0～100之整數：</h2>
+      <h2>答案為0～100之整數：</h2>
       <div>
         <input type="number" id="guessNumber" min="0" max="100"> <!-- 限制輸入不為負數（最小為0 最大100） -->
       </div>
-      <input type="submit" value="送出答案！" onclick="calculateBMI();"> <!-- 送出按鈕 onclick屬性讓你可以在此按鈕被點擊時 呼叫js方法-->
+      <input type="submit" value="送出答案！" onclick="clickAnswerButton();"> <!-- 送出按鈕 onclick屬性讓你可以在此按鈕被點擊時 呼叫js方法-->
       <!-- 沒有用form表單元素 -->
     </section>
 
     <section class="result"> <!-- 右邊結果區塊 -->
       <h2>猜測結果：</h2>
-      <div id="answerCorrect">答對了！</div>  <!-- 正常體位會顯示的文字區塊（非正常體位 此元素就被取代為空字串） -->
-      <div class="answerIncorrect">再小一點</div>  <!-- 非正常體位會顯示的文字區塊（正常體位 此元素就被取代為空字串） -->
-      <div class="answerIncorrect">再大一點</div> 
+      <div id="answerCorrect"></div>  <!-- 正常體位會顯示的文字區塊（非正常體位 此元素就被取代為空字串） -->
+      <div id="answerIncorrect"></div>  <!-- 非正常體位會顯示的文字區塊（正常體位 此元素就被取代為空字串） -->
     </section>
    
     <div class="clearfix"></div> <!-- 前面使用float創造左右兩欄 需要清除 以撐開下面元素 -->
