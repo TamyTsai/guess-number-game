@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>猜數字遊戲</title>
+  <link rel="stylesheet" href="styles/normalize.css"> <!-- 引入normalize -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"> <!-- 引入Open Sans Condensed字型 -->
+  <!-- <link> 放置在 <head> 內，可以確保瀏覽器在渲染網頁內容之前已經載入所需的外部資源，所以當使用者開始看到畫面時，樣式不會有奇怪的變動。
+    如果把 <link> 放在頁面的底部，那麼當瀏覽器載入時，它會先載入頁面的內容，然後再載入 CSS。因此，樣式一開始會是瀏覽器預設，接著才會變成預期的樣式。-->
+  <link rel="stylesheet" href="styles/style.css"> <!-- 引入自己寫的css -->
+</head>
+<body>
+  <section class="guessNumberGame">
+    <section class="fields"> <!-- 左邊輸入區塊 -->
+      <h1>猜數字遊戲</h1>
+      <h2>輸入0～100之整數：</h2>
+      <div>
+        <input type="number" id="guessNumber" min="0" max="100"> <!-- 限制輸入不為負數（最小為0 最大100） -->
+      </div>
+      <input type="submit" value="送出答案！" onclick="calculateBMI();"> <!-- 送出按鈕 onclick屬性讓你可以在此按鈕被點擊時 呼叫js方法-->
+      <!-- 沒有用form表單元素 -->
+    </section>
+
+    <section class="result"> <!-- 右邊結果區塊 -->
+      <h2>猜測結果：</h2>
+      <div id="answerCorrect">答對了！</div>  <!-- 正常體位會顯示的文字區塊（非正常體位 此元素就被取代為空字串） -->
+      <div class="answerIncorrect">再小一點</div>  <!-- 非正常體位會顯示的文字區塊（正常體位 此元素就被取代為空字串） -->
+      <div class="answerIncorrect">再大一點</div> 
+    </section>
+   
+    <div class="clearfix"></div> <!-- 前面使用float創造左右兩欄 需要清除 以撐開下面元素 -->
+
+  </section>
+
+  <script src="scripts/script.js"></script> <!-- 引入自己寫的js -->
+</body>
+</html>

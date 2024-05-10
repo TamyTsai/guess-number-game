@@ -1,0 +1,89 @@
+body .guessNumberGame .clearfix {
+  clear: both;
+}
+
+body {
+  background-color: #EAEAEA;
+}
+
+/* 遊戲區塊 */
+
+body .guessNumberGame {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 30px;
+  background-color: #ABCEE2;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+/* 分配 內容區塊fields 與 結果區塊result 為左右區塊 */
+body .guessNumberGame .fields ,body .guessNumberGame .result {
+  width: 50%;
+  float: left;
+}
+
+
+/* 遊戲 > 內容區塊（左半） */
+
+body .guessNumberGame .fields h1 {
+  font-weight: 300;
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body .guessNumberGame .fields h2 {
+  font-weight: 200;
+  line-height: 35px;
+  text-align: center;
+}
+
+/* 所有數字類型輸入框（猜測數 輸入框） */
+body .guessNumberGame .fields input[type="number"] {
+  width: 200px;
+  font-size: 2em;
+  margin-top: 10px;
+  margin-left: 40px;
+  padding: 10px;
+  border: 2px dashed gray; /* 寬度2px的虛線灰色邊框 */
+}
+
+/* 所有傳送類輸入框（「送出答案」按鈕） */
+body .guessNumberGame .fields input[type="submit"] {
+  background-color: #f8ffb0;
+  margin-top: 30px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+  font-size: 2em;
+  font-weight: 200;
+}
+
+
+/* 遊戲 > 結果區塊（右半） */
+
+body .guessNumberGame .result h2 {
+  font-weight: 400;
+}
+
+#answerCorrect {
+  font-family: 'Open Sans Condensed';
+  color: rgb(186, 0, 0);
+  font-size: 3em;
+  font-weight: 500;
+  text-align: center;
+}
+
+body .guessNumberGame .result .answerIncorrect {
+  font-family: 'Open Sans Condensed';
+  font-size: 3em;
+  font-weight: 300;
+  text-align: center;
+}
+
+
